@@ -27,6 +27,7 @@ extension GradientDesignable where Self: UIView {
 
 extension GradientDesignable where Self: UINavigationBar {
 
+  @available(iOSApplicationExtension, unavailable)
   public func configureGradient() {
     guard let gradientLayer = makeGradientLayer() else {
       setBackgroundImage(nil, for: .default)
